@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clube do Sorvete: novos sabores na sua casa, todo mês.">
+  <title>Clube do Sorvete | Uma surpresa a cada colherada</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Clube do Sorvete - início">
+        <span class="brand-mark">🍦</span>
+        <span>clube do <strong>sorvete</strong></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#sabores">Sabores</a>
+        <a href="#votacao">Vote no sabor</a>
+      </nav>
+      <a class="button button-small" href="#assinar">Quero participar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">✨ Uma novidade todo mês</span>
+          <h1>Uma surpresa<br> a cada <span>colherada.</span></h1>
+          <p>Descubra sabores deliciosos sem sair de casa. Uma caixa especial, novas combinações e momentos mais doces — todos os meses.</p>
+          <div class="hero-actions">
+            <a class="button" href="#assinar">Quero minha caixa <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#como-funciona">Descobrir como funciona</a>
+          </div>
+          <div class="social-proof">
+            <span class="mini-emoji">🍓</span><span class="mini-emoji">🍫</span><span class="mini-emoji">🍪</span>
+            <p><strong>Seu próximo sabor favorito</strong><br>pode estar na próxima caixa.</p>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Ilustração de sorvetes coloridos">
+          <div class="sunburst"></div>
+          <div class="sticker sticker-top">FEITO<br>PARA VOCÊ 💗</div>
+          <div class="icecream icecream-pink"><span>🍓</span></div>
+          <div class="icecream icecream-yellow"><span>🍦</span></div>
+          <div class="icecream icecream-brown"><span>🍫</span></div>
+          <div class="sprinkle s1"></div><div class="sprinkle s2"></div><div class="sprinkle s3"></div>
+          <div class="hero-caption">felicidade em<br>cada potinho!</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits section" id="como-funciona">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">É simples assim</span>
+          <h2>Seu mês merece<br><span>um gostinho novo.</span></h2>
+        </div>
+        <div class="steps">
+          <article class="step-card"><div class="step-icon pink">🛍️</div><span class="step-number">01</span><h3>Entre para o clube</h3><p>Cadastre seu interesse e conheça nossa caixa mensal.</p></article>
+          <article class="step-card"><div class="step-icon yellow">🍨</div><span class="step-number">02</span><h3>Descubra sabores</h3><p>Experimente combinações especiais e edições temáticas.</p></article>
+          <article class="step-card"><div class="step-icon mint">💌</div><span class="step-number">03</span><h3>Ajude a escolher</h3><p>Vote nos sabores que você quer ver nas próximas caixas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="flavors section" id="sabores">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">Um mundo de sabor</span>
+          <h2>Conheça algumas <span>delícias.</span></h2>
+          <p>Estas são ideias de sabores para as nossas caixas. O cardápio poderá mudar a cada edição!</p>
+        </div>
+        <div class="flavor-grid">
+          <article class="flavor-card flavor-strawberry"><div class="flavor-art">🍓</div><div class="flavor-info"><span class="tag">Clássico amado</span><h3>Morango cremoso</h3><p>Leve, frutado e cheio de carinho.</p></div></article>
+          <article class="flavor-card flavor-chocolate"><div class="flavor-art">🍫</div><div class="flavor-info"><span class="tag">Para chocólatras</span><h3>Chocolate intenso</h3><p>Uma colherada de pura felicidade.</p></div></article>
+          <article class="flavor-card flavor-cookie"><div class="flavor-art">🍪</div><div class="flavor-info"><span class="tag">Edição especial</span><h3>Cookies & creme</h3><p>Crocância e cremosidade juntas.</p></div></article>
+        </div>
+        <p class="disclaimer">Imagens e sabores ilustrativos para demonstrar a proposta do MVP.</p>
+      </div>
+    </section>
+
+    <section class="vote-section section" id="votacao">
+      <div class="container vote-grid">
+        <div>
+          <span class="eyebrow">Você escolhe com a gente</span>
+          <h2>Qual sabor merece<br>entrar para o <span>clube?</span></h2>
+          <p>A participação dos clientes ajuda a criar as próximas edições. Vote na sua opção favorita!</p>
+        </div>
+        <form class="vote-form" action="votar.php" method="post">
+          <label class="vote-option"><input type="radio" name="sabor" value="Pistache" required><span class="option-emoji">💚</span><span><strong>Pistache</strong><small>Marcante e cremoso</small></span><span class="radio-dot"></span></label>
+          <label class="vote-option"><input type="radio" name="sabor" value="Doce de leite"><span class="option-emoji">🍯</span><span><strong>Doce de leite</strong><small>Doce na medida certa</small></span><span class="radio-dot"></span></label>
+          <label class="vote-option"><input type="radio" name="sabor" value="Maracujá"><span class="option-emoji">💛</span><span><strong>Maracujá</strong><small>Refrescante e azedinho</small></span><span class="radio-dot"></span></label>
+          <button class="button button-full" type="submit">Enviar meu voto →</button>
+          <small class="form-note">Votação demonstrativa do projeto escolar.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="subscription section" id="assinar">
+      <div class="container subscription-grid">
+        <div class="subscription-copy">
+          <span class="eyebrow">Uma caixa, muitas descobertas</span>
+          <h2>Seu momento doce<br>começa <span>aqui.</span></h2>
+          <p>Deixe seu contato para demonstrar interesse no Clube do Sorvete. Este cadastro é uma simulação de interesse: não gera cobrança nem assinatura real.</p>
+          <div class="price-card"><div><span>Preço inicial estimado</span><strong>R$ 29,90 <small>/ caixa mensal</small></strong></div><span class="price-emoji">🍦</span></div>
+        </div>
+        <form class="signup-form" action="inscrever.php" method="post">
+          <h3>Quero conhecer o clube!</h3>
+          <p>Preencha os campos e conte pra gente o que você gosta.</p>
+          <label for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Como podemos te chamar?" maxlength="80" required>
+          <label for="email">E-mail ou WhatsApp</label>
+          <input id="email" name="contato" type="text" placeholder="Seu contato para retorno" maxlength="120" required>
+          <label for="preferencia">Seu tipo de sabor favorito</label>
+          <select id="preferencia" name="preferencia" required>
+            <option value="">Escolha uma opção</option>
+            <option>Chocolate</option><option>Frutas</option><option>Cremosos</option><option>Sabores diferentes</option>
+          </select>
+          <button class="button button-full" type="submit">Quero demonstrar interesse →</button>
+          <small class="form-note">Protótipo escolar. Nenhuma compra será realizada.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#inicio"><span class="brand-mark">🍦</span><span>clube do <strong>sorvete</strong></span></a>
+      <p>Novos sabores na sua casa, todo mês. 💗</p>
+      <small>© 2026 Clube do Sorvete · Projeto MVP escolar</small>
+    </div>
+  </footer>
+</body>
+</html>
